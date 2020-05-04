@@ -8,8 +8,9 @@ on:
 
 # Jobs to be executed
 jobs:
-  production:
-    name: Fetch permsets from production
+
+  prod:
+    name: Prod
     runs-on: ubuntu-latest
     steps:
       # Install Salesforce CLI
@@ -25,7 +26,7 @@ jobs:
         shell: bash
         run: "echo ${{ secrets.PROD_SFDX_URL}} > ./PROD_SFDX_URL.txt"
 
-      # Authenticate dev hub
+      # Authenticate prod
       - name: "Authenticate Dev Hub"
         run: "sfdx force:auth:sfdxurl:store -f ./PROD_SFDX_URL.txt -a prod -d"
 
@@ -43,23 +44,21 @@ jobs:
         
       # Fetch permsets from production
       - name: "Fetch permsets from production"
-        id: fetchPermsets
         shell: bash
         run: |
           json=$(cat permsets.json)
           permsets="PermissionSet:"$(echo $json | jq -r 'join(", PermissionSet: ")')
-          output=$(sfdx force:source:retrieve -m "$permsets" -u prod --json)
-          commitMessage=$(echo $output | jq -r '.result.inboundFiles | map(.fullName) | join(", ")')
-          echo "::set-output name=commitMessage::$(commitMessage)"
+          sfdx force:source:retrieve -m "$permsets" -u prod
 
+      # Commit changed permsets
       - name: "Commit changed permsets"
         uses: stefanzweifel/git-auto-commit-action@v4.1.6
         with:
-          commit_message: ${{ steps.fetchPermsets.outputs.commitMessage }}
+          commit_message: Changed permsets detected
           branch: 'prod'
 
   preprod:
-    name: Fetch permsets from preprod
+    name: Preprod
     runs-on: ubuntu-latest
     steps:
       # Install Salesforce CLI
@@ -93,17 +92,15 @@ jobs:
         
       # Fetch permsets from production
       - name: "Fetch permsets from production"
-        id: fetchPermsets
         shell: bash
         run: |
           json=$(cat permsets.json)
           permsets="PermissionSet:"$(echo $json | jq -r 'join(", PermissionSet: ")')
-          output=$(sfdx force:source:retrieve -m "$permsets" -u preprod --json)
-          commitMessage=$(echo $output | jq -r '.result.inboundFiles | map(.fullName) | join(", ")')
-          echo "::set-output name=commitMessage::$(commitMessage)"
+          sfdx force:source:retrieve -m "$permsets" -u preprod
 
+      # Commit changed permsets
       - name: "Commit changed permsets"
         uses: stefanzweifel/git-auto-commit-action@v4.1.6
         with:
-          commit_message: ${{ steps.fetchPermsets.outputs.commitMessage }}
+          commit_message: Changed permsets detected
           branch: 'preprod'

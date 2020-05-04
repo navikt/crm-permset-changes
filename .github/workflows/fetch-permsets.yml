@@ -1,0 +1,109 @@
+# Unique name for this workflow
+name: "Fetch changed permsets"
+
+# Definition when the workflow should run
+on:
+  schedule:
+    - cron:  '0 */1 * * *'
+
+# Jobs to be executed
+jobs:
+  production:
+    name: Fetch permsets from production
+    runs-on: ubuntu-latest
+    steps:
+      # Install Salesforce CLI
+      - name: "Install Salesforce CLI" # TODO implement https://github.com/marketplace/actions/salesforce-sfdx-cli-action
+        run: |
+          wget https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
+          mkdir sfdx-cli
+          tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
+          ./sfdx-cli/install
+
+      # Store secret for dev hub
+      - name: "Populate auth file with PROD_SFDX_URL secret"
+        shell: bash
+        run: "echo ${{ secrets.PROD_SFDX_URL}} > ./PROD_SFDX_URL.txt"
+
+      # Authenticate dev hub
+      - name: "Authenticate Dev Hub"
+        run: "sfdx force:auth:sfdxurl:store -f ./PROD_SFDX_URL.txt -a prod -d"
+
+      # Remove auth files
+      - name: "Remove auth files"
+        if: always()
+        run: |
+          rm -f ./PROD_SFDX_URL.txt
+
+      # Checkout the code in the pull request
+      - name: "Checkout source code"
+        uses: actions/checkout@v2
+        with:
+          ref: 'prod'
+        
+      # Fetch permsets from production
+      - name: "Fetch permsets from production"
+        id: fetchPermsets
+        shell: bash
+        run: |
+          json=$(cat permsets.json)
+          permsets="PermissionSet:"$(echo $json | jq -r 'join(", PermissionSet: ")')
+          output=$(sfdx force:source:retrieve -m "$permsets" -u prod --json)
+          commitMessage=$(echo $output | jq -r '.result.inboundFiles | map(.fullName) | join(", ")')
+          echo "::set-output name=commitMessage::$(commitMessage)"
+
+      - name: "Commit changed permsets"
+        uses: stefanzweifel/git-auto-commit-action@v4.1.6
+        with:
+          commit_message: ${{ steps.fetchPermsets.outputs.commitMessage }}
+          branch: 'prod'
+
+  preprod:
+    name: Fetch permsets from preprod
+    runs-on: ubuntu-latest
+    steps:
+      # Install Salesforce CLI
+      - name: "Install Salesforce CLI" # TODO implement https://github.com/marketplace/actions/salesforce-sfdx-cli-action
+        run: |
+          wget https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
+          mkdir sfdx-cli
+          tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
+          ./sfdx-cli/install
+
+      # Store secret for dev hub
+      - name: "Populate auth file with PREPROD_SFDX_URL secret"
+        shell: bash
+        run: "echo ${{ secrets.PREPROD_SFDX_URL}} > ./PREPROD_SFDX_URL.txt"
+
+      # Authenticate preprod
+      - name: "Authenticate Dev Hub"
+        run: "sfdx force:auth:sfdxurl:store -f ./PREPROD_SFDX_URL.txt -a preprod -d"
+
+      # Remove auth files
+      - name: "Remove auth files"
+        if: always()
+        run: |
+          rm -f ./PREPROD_SFDX_URL.txt
+
+      # Checkout the code in the pull request
+      - name: "Checkout source code"
+        uses: actions/checkout@v2
+        with:
+          ref: 'preprod'
+        
+      # Fetch permsets from production
+      - name: "Fetch permsets from production"
+        id: fetchPermsets
+        shell: bash
+        run: |
+          json=$(cat permsets.json)
+          permsets="PermissionSet:"$(echo $json | jq -r 'join(", PermissionSet: ")')
+          output=$(sfdx force:source:retrieve -m "$permsets" -u preprod --json)
+          commitMessage=$(echo $output | jq -r '.result.inboundFiles | map(.fullName) | join(", ")')
+          echo "::set-output name=commitMessage::$(commitMessage)"
+
+      - name: "Commit changed permsets"
+        uses: stefanzweifel/git-auto-commit-action@v4.1.6
+        with:
+          commit_message: ${{ steps.fetchPermsets.outputs.commitMessage }}
+          branch: 'preprod'

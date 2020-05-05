@@ -7,5 +7,12 @@
 	"Create_reports_and_dashboards",
 	"TAG_Admin",
 	"TAG_default",
-	"TAG_NKS_default"
+	"TAG_NKS_default",
+	"HOT_Admin",
+	"HOT_Tolk_Ansatt",
+	"HOT_Tolk_Bruker",
+	"HOT_Tolk_Formidler",
+	"HOT_Tolk_Frilans",
+	"HOT_Tolk_Leder",
+	"HOT_Tolk_Saksbehandler"
 ]

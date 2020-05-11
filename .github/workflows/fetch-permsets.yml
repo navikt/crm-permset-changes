@@ -4,7 +4,7 @@ name: "Fetch changed permsets"
 # Definition when the workflow should run
 on:
   schedule:
-    - cron:  '0 * * * *'
+    - cron:  '*/30 * * * *'
 
 # Jobs to be executed
 jobs:

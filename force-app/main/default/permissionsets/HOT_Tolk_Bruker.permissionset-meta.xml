@@ -142,6 +142,11 @@
         <field>Person__c.HOT_SIPAddress__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Person__c.INT_RegionNumber__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>HOT Tolk Bruker</label>
     <license>Customer Community Login</license>
@@ -181,6 +186,10 @@
         <object>Person__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <recordTypeVisibilities>
+        <recordType>PersonAccount.PersonAccount</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
     <tabSettings>
         <tab>HOT_Request__c</tab>
         <visibility>Visible</visibility>

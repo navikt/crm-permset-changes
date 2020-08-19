@@ -33,6 +33,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>ArenaActivity__c.CaseWorker__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>ArenaActivity__c.DateFrom__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -72,8 +77,4 @@
         <object>ArenaActivity__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
-    <tabSettings>
-        <tab>ArenaActivity__c</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
 </PermissionSet>

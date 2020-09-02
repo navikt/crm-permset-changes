@@ -3,6 +3,11 @@
     <description>Tilgang til kontrakt-objektet</description>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contract__c.Region__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contract__c.TAG_Account__c</field>
         <readable>true</readable>
     </fieldPermissions>

@@ -144,6 +144,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>AccountTeamMember.Departments__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>AccountTeamMember.TAG_Active__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -190,6 +195,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Contact.SourceFormula__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.Source__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

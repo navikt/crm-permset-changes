@@ -24,6 +24,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>HOT_Request__c.ActualUserName__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>HOT_Request__c.AdditionalInvoiceText__c</field>
         <readable>true</readable>
@@ -34,7 +39,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>HOT_Request__c.Company__c</field>
         <readable>true</readable>
     </fieldPermissions>

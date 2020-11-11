@@ -16,9 +16,19 @@
 	"TAG_NKS_default",
 	"HOT_Admin",
 	"HOT_Tolk_Ansatt",
+	"HOT_Tolk_Ansatt_unpackagable",
 	"HOT_Tolk_Bruker",
 	"HOT_Tolk_Formidler",
+	"HOT_Tolk_Formidler_unpackagable",
 	"HOT_Tolk_Frilans",
+	"HOT_Tolk_Frilans_unpackagable",
 	"HOT_Tolk_Leder",
-	"HOT_Tolk_Saksbehandler"
+	"HOT_Tolk_Leder_unpackagable",
+	"HOT_Tolk_Saksbehandler",
+	"HOT_Tolk_Saksbehandler_unpackagable",
+	"HOT_Config",
+	"HOT_Config_unpackaged",
+	"HOT_FSL_Admin",
+	"HOT_Tolk_OEBS_Faktura_RPA",
+	"HOT_Tolk_Rapportering"
 ]

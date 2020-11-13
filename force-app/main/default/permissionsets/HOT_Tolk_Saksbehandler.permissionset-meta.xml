@@ -182,6 +182,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>HOT_Request__c.InterpretationMethodSecondary__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>HOT_Request__c.InterpretationMethod__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -248,6 +253,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>HOT_Request__c.MessageToDispatcher__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>HOT_Request__c.NumberOfInterpretersSecondary__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

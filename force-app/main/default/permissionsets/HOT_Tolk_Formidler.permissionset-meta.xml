@@ -117,7 +117,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>HOT_HistoricallyAssignedResource__c.ServiceResource__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -127,7 +127,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>HOT_HistoricallyAssignedResource__c.Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -987,6 +987,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>WorkOrder.HOT_ExternalWorkOrderStatus__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>WorkOrder.HOT_InterpretationPostalCity__c</field>
         <readable>true</readable>
@@ -1348,7 +1353,7 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
-        <allowCreate>false</allowCreate>
+        <allowCreate>true</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>

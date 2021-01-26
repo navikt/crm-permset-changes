@@ -737,8 +737,8 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>ServiceAppointment.HOT_IsScreenInterpreter__c</field>
+        <editable>true</editable>
+        <field>ServiceAppointment.HOT_IsScreenInterpreterNew__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

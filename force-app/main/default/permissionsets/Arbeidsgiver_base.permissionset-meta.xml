@@ -1064,6 +1064,14 @@
         <recordType>Account.Employer</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Event.ArbeidsgiverEvent</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Task.ArbeidsgiverTask</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
     <tabSettings>
         <tab>standard-Dashboard</tab>
         <visibility>Visible</visibility>

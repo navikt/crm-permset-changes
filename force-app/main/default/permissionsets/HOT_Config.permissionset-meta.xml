@@ -612,6 +612,10 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
+        <tab>HOT_InterestedResource__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
         <tab>HOT_Resource__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>

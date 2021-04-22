@@ -432,6 +432,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>ServiceResource.HOT_InterpreterType__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>ServiceResource.HOT_IsEmployedInterpreter__c</field>
         <readable>true</readable>
@@ -479,6 +484,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>ServiceTerritory.HOT_DeveloperName__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ServiceTerritoryMember.EffectiveEndDate</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -609,10 +619,6 @@
     </recordTypeVisibilities>
     <tabSettings>
         <tab>Application_Log__c</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
-    <tabSettings>
-        <tab>HOT_InterestedResource__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>

@@ -561,12 +561,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.CRM_Activities_on_sub_accounts__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.CRM_MainIndustry__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.CRM_RegistrationYear__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.CRM_Ultimate_Parent_Account__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -686,11 +696,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Account.TAG_Activities_on_sub_accounts__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Account.TAG_DeletedDateFormula__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -737,11 +742,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Account.TAG_Proff_no__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.TAG_Ultimate_Parent_Account__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

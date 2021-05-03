@@ -330,6 +330,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>HOT_Request__c.HOT_OverrideRate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>HOT_Request__c.InterpretationMethodSecondary__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -740,6 +745,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>ServiceAppointment.HOT_Account__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>ServiceAppointment.HOT_AddressFormated__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -806,6 +816,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>ServiceAppointment.HOT_FreelanceSubject__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ServiceAppointment.HOT_GenderAge__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

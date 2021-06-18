@@ -7,6 +7,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>ServiceResource.FSL__GanttLabel__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>WorkType.FSL__Due_Date_Offset__c</field>
         <readable>true</readable>
     </fieldPermissions>

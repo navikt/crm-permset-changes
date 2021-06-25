@@ -137,21 +137,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>ReportingData__c.HOT_RequestCreatedDate__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>ReportingData__c.HOT_RequestName__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>ReportingData__c.HOT_RequestSubject__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>ReportingData__c.HOT_Request__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -163,46 +148,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>ReportingData__c.HOT_SchedStartTime__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>ReportingData__c.HOT_ServiceAppointmentActualDuration__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>ReportingData__c.HOT_ServiceAppointmentAssignmentType__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>ReportingData__c.HOT_ServiceAppointmentCreatedDate__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>ReportingData__c.HOT_ServiceAppointmentDurationType__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>ReportingData__c.HOT_ServiceAppointmentDuration__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>ReportingData__c.HOT_ServiceAppointmentOwner__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>ReportingData__c.HOT_ServiceAppointmentServiceTerritory__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>ReportingData__c.HOT_ServiceAppointmentStatus__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

@@ -644,11 +644,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Person__c.CRM_Age__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Person__c.HOT_IsReservationAgainstReminderSMS__c</field>
         <readable>true</readable>

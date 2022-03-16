@@ -31,5 +31,10 @@
 	"HOT_FSL_Admin",
 	"HOT_Tolk_OEBS_Faktura_RPA",
 	"HOT_Tolk_Rapportering",
-	"AAREG_Arbeidsforhold_Support"
+	"AAREG_Arbeidsforhold_Support",
+	"AAREG_Arbeidsforhold_Saksbehandling",
+	"AAREG_CommunityPermission",
+	"IPS_management",
+	"IPS_Utvidet_oppf_lging_management",
+	"IPS_Deltaker"
 ]

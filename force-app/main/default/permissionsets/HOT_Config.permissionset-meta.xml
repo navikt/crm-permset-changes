@@ -314,16 +314,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>HOT_HistoricallyAssignedResource__c.HOT_DelPol_IsAnonymizeStatusComment__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>HOT_HistoricallyAssignedResource__c.HOT_DelPol_ToAnonymizeStatusComment__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>HOT_HistoricallyAssignedResource__c.SchedEndTime__c</field>
         <readable>true</readable>

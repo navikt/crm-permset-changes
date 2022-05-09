@@ -150,6 +150,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Conversation_Note__c.CRM_Created_By_NAV_Unit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Event.CRM_NAV_Department__c</field>
         <readable>true</readable>
@@ -862,6 +867,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>HOT_WageClaim__c.WorkType__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Message__c.CRM_From_NAV_Unit__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

@@ -50,6 +50,10 @@
     </classAccesses>
     <customPermissions>
         <enabled>true</enabled>
+        <name>HOT_Config</name>
+    </customPermissions>
+    <customPermissions>
+        <enabled>true</enabled>
         <name>HOT_DeleteFiles</name>
     </customPermissions>
     <customPermissions>
@@ -147,11 +151,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>AssignedResource.HOT_TriggerValidation__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Conversation_Note__c.CRM_Created_By_NAV_Unit__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -867,11 +866,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>HOT_WageClaim__c.WorkType__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Message__c.CRM_From_NAV_Unit__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

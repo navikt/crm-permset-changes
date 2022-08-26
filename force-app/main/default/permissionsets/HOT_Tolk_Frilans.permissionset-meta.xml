@@ -426,6 +426,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>HOT_WageClaim__c.ServiceAppointmentCity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>HOT_WageClaim__c.ServiceAppointmentName__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -622,6 +627,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>ServiceAppointment.HOT_AssignedServiceAppointmentFilter__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ServiceAppointment.HOT_AssignmentCategory__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

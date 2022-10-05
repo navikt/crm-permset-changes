@@ -726,21 +726,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Event.IsAllDayEvent</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Event.IsVisibleInSelfService</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Event.IsVisibleInSelfService__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Event.Konto_kontakt__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -981,16 +966,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Task.IsVisibleInSelfService</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Task.IsVisibleInSelfService__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Task.Konto_kontakt__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1206,11 +1181,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Work_Trail__c.UO_Main_Goal_list__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Work_Trail__c.What_cannot_be_shared_with_the_employer__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1317,6 +1287,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Work_Trail__c.ips_Interests_Hobbies__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Work_Trail__c.ips_Main_Goal_list__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

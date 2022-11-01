@@ -1708,14 +1708,6 @@
     </tabSettings>
     <userPermissions>
         <enabled>true</enabled>
-        <name>IsotopeAccess</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>NativeWebviewScrolling</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
         <name>RunFlow</name>
     </userPermissions>
 </PermissionSet>

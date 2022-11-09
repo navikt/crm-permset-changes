@@ -809,6 +809,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>SMS__c.RecipientFormatted__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>SMS__c.Recipient__c</field>
         <readable>true</readable>
     </fieldPermissions>

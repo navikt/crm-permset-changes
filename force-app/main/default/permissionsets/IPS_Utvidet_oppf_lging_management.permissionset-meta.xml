@@ -726,11 +726,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Event.Meeting_Agenda__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Event.RelatedToAccount__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -880,11 +875,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Task.ActivityDate</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Task.Date__c</field>
         <readable>true</readable>
@@ -947,11 +937,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Task.Konto_kontakt__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Task.Meeting_Agenda__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

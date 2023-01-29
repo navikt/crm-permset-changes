@@ -81,6 +81,11 @@
         <field>ArenaActivity__c.RegisteredBy__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ArenaActivity__c.TAG_Source__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Arbeidsgiver - Arena Aktiviteter</label>
     <objectPermissions>

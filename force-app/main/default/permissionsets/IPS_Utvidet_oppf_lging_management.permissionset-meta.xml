@@ -1636,10 +1636,6 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <recordType>Task.ArbeidsgiverTask</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
         <recordType>Task.IPS_Task</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>

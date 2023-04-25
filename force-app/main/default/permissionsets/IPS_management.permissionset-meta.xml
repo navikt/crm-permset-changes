@@ -689,6 +689,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Event.IPS_PowerofOne__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Event.IPS_Status1__c</field>
         <readable>true</readable>
@@ -946,6 +951,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Task.F_rste_arbeidsgiverm_te__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Task.IPS_PowerofOne__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

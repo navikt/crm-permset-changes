@@ -8,10 +8,6 @@
         <apexClass>IPS_eventTravelTimeController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    <classAccesses>
-        <apexClass>IPS_viewReportPDFController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
     <description>Tilgang til IPS  og Jobbsporet for Jobbspesialister og Metodeveiledere</description>
     <fieldPermissions>
         <editable>false</editable>
@@ -689,11 +685,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Event.IPS_PowerofOne__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Event.IPS_Status1__c</field>
         <readable>true</readable>
@@ -731,11 +722,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Event.Konto_kontakt__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Event.Location</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -951,11 +937,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Task.F_rste_arbeidsgiverm_te__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Task.IPS_PowerofOne__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1709,10 +1690,6 @@
         <object>ips_report__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
-    <pageAccesses>
-        <apexPage>IPS_viewReportPDF</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
     <recordTypeVisibilities>
         <recordType>Account.Employer</recordType>
         <visible>true</visible>

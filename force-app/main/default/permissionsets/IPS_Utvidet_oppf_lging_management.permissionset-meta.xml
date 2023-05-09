@@ -5,6 +5,14 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>IPS_Utility</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>IPS_changeOwnerOnActivityController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>IPS_eventTravelTimeController</apexClass>
         <enabled>true</enabled>
     </classAccesses>

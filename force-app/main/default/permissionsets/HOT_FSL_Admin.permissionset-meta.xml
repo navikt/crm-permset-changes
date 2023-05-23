@@ -249,6 +249,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Event.FSL__Event_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>FSL__Crew_Management_User_Settings__c.FSL__GanttHorizon__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1890,6 +1895,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>SkillRequirement.SkillLevel</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.FSL__Event_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

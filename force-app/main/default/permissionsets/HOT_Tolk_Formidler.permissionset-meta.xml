@@ -1558,6 +1558,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Thread__c.CRM_Number_of_unread_Messages_by_NAV__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Thread__c.CRM_Related_Record_Link__c</field>
         <readable>true</readable>
     </fieldPermissions>

@@ -25,6 +25,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>IPS_ParticipantsReports</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>IPS_Utility</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -34,6 +38,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>IPS_eventTravelTimeController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>IPS_invocableCrashController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -1543,6 +1551,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>ips_report__c.IPS_dueDateBack__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>ips_report__c.IPS_endReportSumm1__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1564,6 +1577,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>ips_report__c.IPS_endReportSumm5__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ips_report__c.IPS_endReportSumm6__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ips_report__c.IPS_endReportSumm7__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1592,8 +1615,28 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>ips_report__c.IPS_participantName__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ips_report__c.IPS_participantsComment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ips_report__c.IPS_participantsOnBehalf__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>ips_report__c.IPS_status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>ips_report__c.IPS_subject__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1607,8 +1650,13 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>ips_report__c.IPS_workTrailName__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ips_report__c.IPS_worktrail_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1715,7 +1763,7 @@
     </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
-        <allowDelete>false</allowDelete>
+        <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
